@@ -43,4 +43,6 @@ token = os.getenv("DISCORD_TOKEN")
 if not token:
     raise ValueError("❌ DISCORD_TOKEN not found. Make sure it's set in Railway or in your local .env file.")
 
+print("🚨 DISCORD_TOKEN from env:", repr(os.getenv("DISCORD_TOKEN")))
+
 bot.run(token)
